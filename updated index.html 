@@ -1,1 +1,59 @@
-updated index.html
+updated index.html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BridgePoint</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">🌉 BridgePoint</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Connecting People, Building Understanding</h1>
+    <p>Together we can bridge cultures, promote peace, and open opportunities.</p>
+    <a href="#get-started" class="btn-primary">Get Started</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About BridgePoint</h2>
+    <p>
+      BridgePoint is more than a platform — it's a movement to bring people 
+      together across cultures, reduce inequality, and foster integration.
+    </p>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <h2>Features</h2>
+    <ul>
+      <li>🌍 Cultural Exchange Spaces</li>
+      <li>🤝 Community Building Tools</li>
+      <li>📈 Opportunities for Growth</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email us at: <a href="mailto:connect@bridgepoint.com">connect@bridgepoint.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 BridgePoint. Building connections that matter.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
