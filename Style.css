@@ -99,4 +99,12 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
   border-top: 4px solid #00b4d8;
+}/* Card hover polish */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.1);
 }
