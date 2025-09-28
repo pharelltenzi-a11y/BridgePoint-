@@ -4,110 +4,103 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BridgePoint</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">🌉 BridgePoint</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#features">Features</a>
-      <a href="#connect">Connect</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>Connecting People, Building Understanding</h1>
-    <p>BridgePoint helps bring people together across divides to foster unity and understanding.</p>
-    <button onclick="scrollToSection('about')">Learn More</button>
-  </section>
-
-  <section id="about">
-    <h2>About BridgePoint</h2>
-    <p>
-      In today’s polarized world, we believe dialogue and connection can
-      transform relationships. BridgePoint is designed to be a safe,
-      sleek space for that.
-    </p>
-  </section>
-
-  <section id="features">
-    <h2>Features</h2>
-    <ul>
-      <li>💬 Open Conversations</li>
-      <li>🌍 Global Connections</li>
-      <li>🔒 Secure & Reliable</li>
-    </ul>
-  </section>
-
-  <section id="connect">
-    <h2>Join the Movement</h2>
-    <p>Be part of the BridgePoint community and help build bridges, not walls.</p>
-    <button onclick="alert('Coming soon!')">Get Started</button>
-  </section>
-
-  <footer>
-    <p>© 2025 BridgePoint. All rights reserved.</p>
-  </footer>
-
+  <div class="card">
+    <h1>Welcome to BridgePoint</h1>
+    <p>Connecting people through goodwill and shared contributions.</p>
+    <a href="#learn-more" class="btn">Learn More</a>
+    <footer>
+      <p>Support us: 
+        <a href="https://www.buymeacoffee.com/yourusername" target="_blank">
+          Buy Me a Coffee ☕
+        </a>
+      </p>
+    </footer>
+  </div>
   <script src="script.js"></script>
 </body>
-</html><!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BridgePoint</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>🌉 BridgePoint</h1>
-      <p>Connecting people, cultures, and opportunities.</p>
-    </header>
+</html>/* Reset & Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fdfdfd, #f5f7fa);
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
 
-    <main>
-      <section class="hero">
-        <h2>Structure with Soul</h2>
-        <p>
-          A minimal and sleek platform designed to bring people together,
-          foster understanding, and create new possibilities.
-        </p>
-        <button onclick="alert('Thanks for connecting with BridgePoint!')">
-          Get Started
-        </button>
-      </section>
+/* Card Container */
+.card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
 
-      <section class="about">
-        <h2>About</h2>
-        <p>
-          BridgePoint is about clarity, impact, and connection. We believe in
-          building with purpose and creating tools that bring people closer,
-          reduce inequality, and open doors for peace ✌️.
-        </p>
-      </section>
+/* Heading */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: #1e293b;
+}
 
-      <section class="work">
-        <h2>Work</h2>
-        <ul>
-          <li>📍 Interactive Map Project</li>
-          <li>🌐 Personal Website Builds</li>
-          <li>🔮 Creative Concepts</li>
-        </ul>
-      </section>
+/* Tagline */
+p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #475569;
+}
 
-      <section class="connect">
-        <h2>Connect</h2>
-        <p>Open to collaborations and new opportunities.</p>
-        <button>Email</button>
-        <button>LinkedIn</button>
-      </section>
-    </main>
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  border-radius: 2rem;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #1d4ed8, #2563eb);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+}
 
-    <footer>
-      <p>© 2025 BridgePoint. Built with structure + soul.</p>
-    </footer>
+/* Footer */
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+footer a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+footer a:hover {
+  text-decoration: underline;
+}// Simple script for BridgePoint
+document.addEventListener("DOMContentLoaded", () => {
+  const learnMoreBtn = document.querySelector(".btn");
 
-    <script src="script.js"></script>
-  </body>
-</html>https://www.buymeacoffee.com/bridgepoint
+  learnMoreBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    alert("BridgePoint is coming soon 🚀 Stay tuned!");
+  });
+});
